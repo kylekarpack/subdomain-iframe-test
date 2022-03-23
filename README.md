@@ -15,3 +15,5 @@ Then run:
 npm install
 npm run start
 ```
+
+And go to "http://example.com" in a browser

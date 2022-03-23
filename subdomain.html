@@ -1,0 +1,23 @@
+<html>
+  <body>
+    subdomain.example.com
+    <br />
+    (javascript is running here)
+    <br />
+
+      <iframe src="http://other.subdomain.example.com/sub-subdomain.html" width="500" height="500">
+
+      </iframe>
+
+      <script>
+        document.domain = "subdomain.example.com";
+        setTimeout(() => {
+          var div = document.createElement("div");
+          div.innerHTML = "<div style='background:red'>Added by JS from parent</div>";
+          document.querySelector("iframe").contentWindow.document.querySelector("body")
+            .appendChild(div);
+        }, 1000);
+      </script>
+
+  </body>
+</html>
