@@ -1,0 +1,17 @@
+<html>
+  <body>
+    test content other
+
+      <iframe src="http://other.subdomain.example.com:8081/third.html">
+
+      </iframe>
+
+      <script>
+        document.domain = "subdomain.example.com";
+        setTimeout(() => {
+          document.querySelector("iframe").contentWindow.document.querySelector("body").append("Added by JS from parent")
+        }, 1000);
+      </script>
+
+  </body>
+</html>
