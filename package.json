@@ -1,0 +1,19 @@
+{
+  "name": "subdomain-iframe-test",
+  "version": "1.0.0",
+  "description": "Add the following to your hosts file:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylekarpack/subdomain-iframe-test.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kylekarpack/subdomain-iframe-test/issues"
+  },
+  "homepage": "https://github.com/kylekarpack/subdomain-iframe-test#readme"
+}
